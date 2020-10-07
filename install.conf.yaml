@@ -1,0 +1,17 @@
+- clean: ['~']
+
+- defaults:
+    relink: true
+    create: true
+
+- link:
+    ~/.config/mpv: mpv
+    ~/.config/yay: yay
+    ~/.config/zathura: zathura
+    ~/.config/lf: lf
+
+- shell:
+    -
+        description: "NOTE: Link Firefox's chrome/ folder to firefox/ manually."
+        command: "true"
+        quiet: true

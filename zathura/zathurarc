@@ -1,0 +1,6 @@
+set selection-clipboard clipboard
+
+# Kakoune-like bindings
+map gk goto top
+map gj goto bottom
+map <C-n> exec "/bin/sh -c '$TERMINAL'"

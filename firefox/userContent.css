@@ -1,0 +1,12 @@
+@import url(firefox-csshacks/content/compact_addons_manager.css);
+@import url(firefox-csshacks/content/multi_column_addons.css);
+
+@import url(firefox-csshacks/content/newtab_background_color.css);
+@-moz-document url("about:home"),url("about:blank"),url("about:newtab"),url("about:privatebrowsing"){
+  body{background-color: #100018 !important;}
+}
+@-moz-document("about:privatebrowsing"){
+  .search-handoff-button{ background-color: #100018 !important; }
+  .fake-textbox{ color: #dd99dd !important } 
+}
+

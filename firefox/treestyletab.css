@@ -1,0 +1,27 @@
+/* Change height of tabs */
+tab-item {
+  --tab-size: 25px !important;
+  height: var(--tab-size);
+}
+
+/* Force scrollbar to the right */
+:root.left #tabbar {
+  direction: ltr;
+  overflow-x: hidden;
+}
+
+/* No tab divider */
+tab-item {
+  border: none; 
+}
+
+/* As little space before the tab name as possible.
+   The fold/unfold icon is not affected. */
+tab-item:not(.pinned) {
+  padding-left: 0px !important; /* !important is required when there are enough tabs to cause a scrollbar */
+
+/* Change styling of the favicon of pending (unloaded) tabs */
+tab-item.discarded tab-favicon {
+  opacity: 0.5 !important;
+}
+}

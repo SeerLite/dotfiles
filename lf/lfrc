@@ -1,0 +1,53 @@
+# Filename handling in shell commands (IFS=[newline])
+set ifs "\n"
+
+# Visual settings
+set ratios 1:3:2
+set scrolloff 4
+
+# Unmap q and fallback to :q
+cmd q quit
+map q
+
+# Kakoune-like mappings
+map gk top
+map gj bottom
+
+# Period to toggle hidden files
+map . set hidden!
+
+# o to toggle between single and "miller"view
+map o &{{
+    if [ "$lf_preview" = "true" ]; then
+        lf -remote "send $id :set nopreview; set ratios 1"
+    else
+        lf -remote "send $id :set ratios 1:3:2; set preview"
+    fi
+}}
+
+# mkdir
+cmd mkdir ${{
+    mkdir -p "$@"
+    lf -remote "send $id load"$'\n'"send $id select \"$@\""
+}}
+
+# Easier delete command
+cmd d delete
+
+# Edit file if text file (instead of "opening"). Taken from lf -doc
+cmd open ${{
+    case "$(file -b --mime-type -- $f)" in
+        text/*) $EDITOR -- $fx;;
+        application/vnd.openxmlformats-officedocument.wordprocessingml.document) zaread $fx;;
+        *) mimeo -qc -- $fx | /usr/bin/dash;;
+    esac
+}}
+
+# Open new lf window on current directory, with same selection
+map <c-w> &LF_SELECTION="$f" setsid -f "$TERMINAL" -e lf
+&{{
+    [ -n "$LF_SELECTION" ] && lf -remote "send $id select \"$LF_SELECTION\""
+}}
+
+# Open new shell window in current directory
+map <c-n> &setsid -f "$TERMINAL"
