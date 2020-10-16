@@ -5,10 +5,12 @@
     create: true
 
 - link:
+    ~/.config/imv: imv
     ~/.config/mpv: mpv
     ~/.config/yay: yay
     ~/.config/zathura: zathura
     ~/.config/lf: lf
+    ~/.Xresources: Xresources
 
 - shell:
     -

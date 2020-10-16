@@ -1,0 +1,51 @@
+! General
+URxvt.font: xft:Cozette
+URxvt.boldFont:
+URxvt.italicFont:
+URxvt.boldItalicFont:
+URxvt.letterSpace: -1
+URxvt.scrollBar: false
+URxvt.internalBorder: 16
+URxvt.cursorBlink: 0
+URxvt.geometry: 63x19
+
+! No autoscrolling output
+URxvt.scrollWithBuffer: true
+URxvt.scrollTtyOutput: false
+URxvt.scrollTtyKeypress: true
+
+! I dont know what this is
+!URxvt.perl-ext:
+
+! Clipboard with Ctrl + Shift
+URxvt.perl-ext-common: default
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+! Free up Ctrl + Alt
+URxvt.keysym.Control-Meta-c: builtin-string:
+URxvt.keysym.Control-Meta-v: builtin-string:
+
+! Colors
+URxvt.depth: 32
+URxvt.foreground: #dd99dd
+URxvt.background: [80]#100018
+URxvt.cursorColor: #dd99dd
+URxvt.cursorColor2: #f9aaf9
+URxvt.color0: #000000
+URxvt.color1: #d02020
+URxvt.color2: #009000
+URxvt.color3: #c0c000
+URxvt.color4: #0020f0
+URxvt.color5: #bb00ee
+URxvt.color6: #008080
+URxvt.color7: #80b0b0
+URxvt.color8: #3f3f3f
+URxvt.color9: #ff4444
+URxvt.color10: #00d000
+URxvt.color11: #ffff3f
+URxvt.color12: #3f3fff
+URxvt.color13: #ff44ff
+URxvt.color14: #3fbbbb
+URxvt.color15: #ffffff

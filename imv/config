@@ -1,0 +1,41 @@
+[options]
+overlay_font = Cozette:11
+suppress_default_binds = true
+
+[binds]
+q = quit
+<Escape> = quit
+n = next
+N = prev
+p = prev
+x = close
+
+h = pan 20 0
+j = pan 0 -20
+k = pan 0 20
+l = pan -20 0
+<Left> = pan 20 0
+<Down> = pan 0 -20
+<Up> = pan 0 20
+<Right> = pan -20 0
+
+<plus> = zoom 1
+<minus> = zoom -1
+0 = zoom actual
+<equal> = zoom actual
+
+z = scaling next
+a = upscaling next
+
+f = fullscreen
+d = overlay
+
+<period> = next_frame
+
+<space> = toggle_playing
+
+r = exec mogrify -rotate 270 "$imv_current_file"
+<less> = exec mogrify -rotate 270 "$imv_current_file"
+R = exec mogrify -rotate 90 "$imv_current_file"
+
+# kak:filetype=ini
