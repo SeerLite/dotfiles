@@ -3,4 +3,30 @@ set selection-clipboard clipboard
 # Kakoune-like bindings
 map gk goto top
 map gj goto bottom
-map <C-n> exec "/bin/sh -c '$TERMINAL'"
+map <C-w> exec "/bin/sh -c 'zathura \"$zathura_file\"'"
+
+set font "Cozette 10"
+
+set default-fg "#dd99dd"
+set default-bg rgba(16,0,24,0.8)
+
+set statusbar-fg "#dd99dd"
+set statusbar-bg rgba(0,0,0,0)
+
+set inputbar-fg "#dd99dd"
+set inputbar-bg rgba(0,0,0,0)
+
+set notification-fg "#7733bb"
+set notification-bg rgba(0,0,0,0)
+
+set notification-error-fg "#7733bb"
+set notification-error-bg rgba(0,0,0,0)
+
+set recolor-darkcolor "#dd99dd"
+set recolor-lightcolor rgba(0,0,0,0)
+
+set highlight-color "#7733bb"
+set highlight-active-color "#dd99dd"
+
+set recolor true
+set recolor-keephue true
