@@ -19,9 +19,9 @@ tab-item {
    The fold/unfold icon is not affected. */
 tab-item:not(.pinned) {
   padding-left: 0px !important; /* !important is required when there are enough tabs to cause a scrollbar */
-
+}
 /* Change styling of the favicon of pending (unloaded) tabs */
 tab-item.discarded tab-favicon {
   opacity: 0.5 !important;
 }
-}
+#tabbar { scrollbar-color: #7733bb #210c3d; }
