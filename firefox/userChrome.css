@@ -23,3 +23,9 @@ display: flex !important;
   display: none;
 }
 
+/* Make Muted icon on favicons unclickable (thanks https://www.reddit.com/r/firefox/comments/3v4hrl/disable_mute_tab_icon_button/d05xohp/) */
+/* Some day I'll make this work */
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+.tabbrowser-tab :-moz-any(.tab-icon-sound, .tab-icon-overlay[soundplaying]) {
+    pointer-events: none !important;
+}
