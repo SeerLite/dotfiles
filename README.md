@@ -22,3 +22,28 @@ Still WIP, most configs aren't here yet.
 ## Miscellaneous
 * Operating System: [Arch](https://www.archlinux.org/) ~~btw~~
 * Filesystem: [Btrfs](https://btrfs.wiki.kernel.org/)
+ 
+## Colors
+### Main
+* Foreground: `#dd99dd`
+* Background: `#100018`, if possible 80% opacity
+* Highligting: `#7733bb`
+* Menu/special: `#210c3d`
+### Terminal
+| Index | Name           | Value     |
+|-------|----------------|-----------|
+| 0     | Black          | `#000000` |
+| 1     | Red            | `#d02020` |
+| 2     | Green          | `#009000` |
+| 3     | Yellow         | `#c0c000` |
+| 4     | Blue           | `#0020f0` |
+| 5     | Magenta        | `#bb00ee` |
+| 6     | Cyan           | `#008080` |
+| 7     | White          | `#80b0b0` |
+| 8     | Bright Red     | `#3f3f3f` |
+| 9     | Bright Green   | `#ff4444` |
+| 10    | Bright Yellow  | `#00d000` |
+| 11    | Bright Blue    | `#ffff3f` |
+| 12    | Bright Magenta | `#3f3fff` |
+| 13    | Bright Cyan    | `#ff44ff` |
+| 14    | Bright White   | `#3fbbbb` |
