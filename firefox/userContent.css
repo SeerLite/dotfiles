@@ -4,6 +4,19 @@
 @import url(firefox-csshacks/content/newtab_background_color.css);
 @-moz-document url("about:home"),url("about:blank"),url("about:newtab"),url("about:privatebrowsing"){
   body{background-color: #100018 !important;}
+  .search-inner-wrapper * {
+    color: #dd99dd !important;
+    background-color: #100018 !important;
+    font-family: Cozette !important;
+    box-shadow: none !important;
+  }
+  .search-inner-wrapper input:active, .search-wrapper input:focus {
+    border-color: #7733bb !important;
+    box-shadow: none !important;
+  }
+  .wordmark {
+    display: none !important;
+  }
 }
 @-moz-document("about:privatebrowsing"){
   .search-handoff-button{ background-color: #100018 !important; }
