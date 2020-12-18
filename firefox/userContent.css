@@ -4,20 +4,31 @@
 @import url(firefox-csshacks/content/newtab_background_color.css);
 @-moz-document url("about:home"),url("about:blank"),url("about:newtab"),url("about:privatebrowsing"){
   body{background-color: #100018 !important;}
+}
+
+@-moz-document url("about:newtab"),url("about:privatebrowsing"){
   .search-inner-wrapper * {
     color: #dd99dd !important;
     background-color: #100018 !important;
     font-family: Cozette !important;
     box-shadow: none !important;
   }
-  .search-inner-wrapper input:active, .search-wrapper input:focus {
-    border-color: #7733bb !important;
-    box-shadow: none !important;
+  body {
+    --newtab-search-wordmark-color: #dd99dd !important;
+    --newtab-textbox-focus-color: #7733bb !important;
+    --newtab-search-icon-color: #dd99dd !important;
   }
   .wordmark {
     display: none !important;
   }
+  .logo {
+    background: url("chrome://branding/content/about-logo.svg") !important;
+    background-size: 256px !important;
+    width: 256px !important;
+    height: 256px !important;
+  }
 }
+
 @-moz-document("about:privatebrowsing"){
   .search-handoff-button{ background-color: #100018 !important; }
   .fake-textbox{ color: #dd99dd !important } 
