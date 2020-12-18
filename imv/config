@@ -34,8 +34,7 @@ d = overlay
 
 <space> = toggle_playing
 
-r = exec mogrify -rotate 270 "$imv_current_file"
-<less> = exec mogrify -rotate 270 "$imv_current_file"
-R = exec mogrify -rotate 90 "$imv_current_file"
+<less> = rotate by 270
+<greater> = rotate by 90
 
 # kak:filetype=ini
