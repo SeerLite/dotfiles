@@ -40,10 +40,11 @@ Still WIP, most configs aren't here yet.
 | 5     | Magenta        | `#bb00ee` |
 | 6     | Cyan           | `#008080` |
 | 7     | White          | `#80b0b0` |
-| 8     | Bright Red     | `#3f3f3f` |
-| 9     | Bright Green   | `#ff4444` |
-| 10    | Bright Yellow  | `#00d000` |
-| 11    | Bright Blue    | `#ffff3f` |
-| 12    | Bright Magenta | `#3f3fff` |
-| 13    | Bright Cyan    | `#ff44ff` |
-| 14    | Bright White   | `#3fbbbb` |
+| 8     | Bright Black   | `#3f3f3f` |
+| 9     | Bright Red     | `#ff4444` |
+| 10    | Bright Green   | `#00d000` |
+| 11    | Bright Yellow  | `#ffff3f` |
+| 12    | Bright Blue    | `#3f3fff` |
+| 13    | Bright Magenta | `#ff44ff` |
+| 14    | Bright Cyan    | `#3fbbbb` |
+| 15    | Bright White   | `#ffffff` |
