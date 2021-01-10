@@ -29,6 +29,7 @@ a = upscaling next
 
 f = fullscreen
 d = overlay
+<Ctrl+d> = exec setsid -f dragon $imv_current_file
 
 <period> = next_frame
 
