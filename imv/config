@@ -19,7 +19,9 @@ l = pan -20 0
 <Up> = pan 0 20
 <Right> = pan -20 0
 
-<plus> = zoom 1
+# https://github.com/eXeC64/imv/issues/318
+#<plus> = zoom 1
+<Shift+plus> = zoom 1
 <minus> = zoom -1
 0 = zoom actual
 <equal> = zoom actual
