@@ -6,7 +6,6 @@ set smoothscroll true
 set hintchars arstdhneio
 set editorcmd alacritty -e k %f
 set escapehatchsidebarhack false
-set modeindicatorshowkeys true
 set modeindicator true
 
 " Binds
