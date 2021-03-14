@@ -16,6 +16,9 @@ map gj bottom
 # Period to toggle hidden files
 map . set hidden!
 
+# Refresh folders every second
+set period 1
+
 # o to toggle between single and "miller"view
 map o &{{
     if [ "$lf_preview" = "true" ]; then
