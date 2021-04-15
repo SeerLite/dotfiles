@@ -268,6 +268,8 @@ alias reibadailty jumble
 autocmd DocStart monkeytype.com mode ignore
 autocmd DocStart localhost mode ignore
 autocmd DocStart keyma.sh mode ignore
+autocmd DocStart seerlite.github.io/monkeytype mode ignore
+autocmd DocStart tilde.team/~seerlite/monkeytype mode ignore
 autocmd DocLoad ^https://github.com/tridactyl/tridactyl/issues/new$ issue
 autocmd TriStart .* source_quiet
 
