@@ -3,7 +3,16 @@
 
 /* Fix urlbar alignment */
 #urlbar[breakout][breakout-extend] {
-	bottom: 5px !important;
+	bottom: 4px !important;
+}
+
+#urlbar-input-container {
+	padding-inline: 0 !important;
+	padding-block: 0 !important;
+}
+
+#urlbar-background {
+	border: none !important;
 }
 
 /* No tabs */
