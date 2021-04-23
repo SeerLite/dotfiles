@@ -1,36 +1,29 @@
 @import url(firefox-csshacks/chrome/compact_urlbar_megabar.css);
+@import url(firefox-csshacks/chrome/navbar_below_content.css);
 
-/* Only urlbar at bottom (thanks https://github.com/MrOtherGuy/firefox-csshacks/issues/80#issuecomment-704390189) */
-body > box { -moz-box-ordinal-group: 2 }
-#titlebar{ visibility: collapse }
-
-#urlbar[breakout][breakout-extend]{
-display: flex !important;
-  flex-direction: column-reverse;
-  bottom: 3px !important;
-  top: auto !important;
+/* Fix urlbar alignment */
+#urlbar[breakout][breakout-extend] {
+	bottom: 5px !important;
 }
 
-#urlbar[open] > .urlbarView{ margin-block: 0px calc(var(--urlbar-height) + 1px) !important; box-shadow: none !important; }
+/* No tabs */
+#titlebar { visibility: collapse }
 
-/* Reduce minimum width of sidebar (for treestyletab) */
+/* Reduce minimum width of sidebar (for Sidebery) */
 #sidebar {
-  min-width: 100px !important;
+	min-width: 100px !important;
 }
 
 /* Hide sidebar headers */
 #sidebar-header {
-  display: none;
-}
-
-/* Make Muted icon on favicons unclickable (thanks https://www.reddit.com/r/firefox/comments/3v4hrl/disable_mute_tab_icon_button/d05xohp/) */
-/* Some day I'll make this work */
-@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
-.tabbrowser-tab :-moz-any(.tab-icon-sound, .tab-icon-overlay[soundplaying]) {
-    pointer-events: none !important;
+	display: none;
 }
 
 /* Hide urlbar placeholder text (e.g "Search with X") (thanks https://www.reddit.com/r/FirefoxCSS/comments/khc96f/how_do_i_change_url_bar_text/ggkru6d/) */
 #urlbar-input::placeholder {
-  opacity: 0;
+	opacity: 0;
+}
+
+:root {
+	--focus-outline-color: #7733bb !important;
 }

@@ -11,7 +11,7 @@
     display: none;
   }
 
-  .wordmark {
+  .wordmark, .personalize-button {
     display: none !important;
   }
 
