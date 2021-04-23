@@ -13,6 +13,7 @@
 
 #urlbar-background {
 	border: none !important;
+	border-radius: 0 !important;
 }
 
 /* No tabs */
