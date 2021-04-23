@@ -52,5 +52,5 @@ map <c-w> &LF_SELECTION="$f" setsid -f "$TERMINAL" -e lf
     [ -n "$LF_SELECTION" ] && lf -remote "send $id select \"$LF_SELECTION\""
 }}
 
-# Open new shell window in current directory
-map <c-n> &setsid -f "$TERMINAL"
+map <a-q> &desktopdirs set
+map <c-q> &lf -remote "send $id cd '$(desktopdirs get)'"
