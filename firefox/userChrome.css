@@ -27,3 +27,8 @@
 :root {
 	--focus-outline-color: #7733bb !important;
 }
+
+#nav-bar, #sidebar {
+	background-image: url("background.png") !important;
+	background-attachment: fixed;
+}
