@@ -35,6 +35,7 @@
 
 :root {
 	--focus-outline-color: #7733bb !important;
+	--autocomplete-popup-highlight-background: #7733bb !important;
 }
 
 #nav-bar, #sidebar {
