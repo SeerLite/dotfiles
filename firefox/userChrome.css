@@ -1,9 +1,13 @@
 @import url(firefox-csshacks/chrome/compact_urlbar_megabar.css);
-@import url(firefox-csshacks/chrome/navbar_below_content.css);
 
-/* Fix urlbar alignment */
-#urlbar[breakout][breakout-extend] {
+/* Only urlbar at bottom (thanks https://github.com/MrOtherGuy/firefox-csshacks/issues/80#issuecomment-704390189) */
+body > box { -moz-box-ordinal-group: 2 }
+
+#urlbar[breakout][breakout-extend]{
+	display: flex !important;
+	flex-direction: column-reverse;
 	bottom: 4px !important;
+	top: auto !important;
 }
 
 #urlbar-input-container {
