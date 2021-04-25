@@ -1,17 +1,18 @@
 - clean: ['~']
 
 - defaults:
-    relink: true
-    create: true
+    link:
+        relink: true
+        create: true
 
 - link:
-    ~/.config/imv: imv
-    ~/.config/mpv: mpv
-    ~/.config/yay: yay
-    ~/.config/zathura: zathura
-    ~/.config/lf: lf
-    ~/.config/tridactyl: tridactyl
-    ~/.Xresources: Xresources
+    ~/.config/imv: config/imv
+    ~/.config/mpv: config/mpv
+    ~/.config/yay: config/yay
+    ~/.config/zathura: config/zathura
+    ~/.config/lf: config/lf
+    ~/.config/tridactyl: config/tridactyl
+    ~/.Xresources: config/Xresources
 
 - shell:
     -

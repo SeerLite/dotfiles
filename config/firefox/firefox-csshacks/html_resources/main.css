@@ -1,0 +1,96 @@
+body{background-color: rgb(60,50,70); color: silver; margin: 0px }
+#ui{ display: flex; }
+#site{ height: 100vh; overflow-y: auto; flex: 1 }
+
+.categoryList{
+  padding-block: 1em;
+  box-sizing: border-box;
+  border-inline-end: 1px solid gold;
+  background-color: rgb(60,60,70);
+  max-height: 100vh;
+  overflow-y: auto;
+  min-width: 18ch
+}
+
+.categoryList.blurred{
+  background-color: rgb(20,20,30);
+  opacity: 0.5;
+  margin-inline-end: -13ch;
+}
+
+#secondaryCategories{
+  position: relative;
+  z-index:1;
+}
+
+.categoryList:hover{
+  position: relative;
+  z-index: 2;
+  background-color: rgb(60,60,70);
+  opacity: 1;
+}
+
+a{ color: rgb(100,150,200); margin-inline-start: 1ch }
+pre a{ margin: 0 }
+a:visited{ color: rgb(150,100,200) }
+a:hover{ color: rgb(200,150,100) }
+pre:empty{ display: none }
+.category{ padding: 0.2em 1em; cursor: pointer; text-transform: capitalize }
+#categories > .category[data-value]::after{ content: " (" attr(data-value) ")"; float: right}
+
+.currentCategory,
+.category:hover{ background-color: grey }
+
+.currentCategory::before{ content: "»" }
+
+.target{
+  margin: 0.1em;
+  background-color: rgb(60,60,70);
+  padding: 0.3em;
+  border: 1px solid rgb(40,40,40);
+  border-radius: 4px;
+  max-width: 50ch;
+  cursor: pointer
+}
+.target > a{
+  content: "";
+  width: 1.2em;
+  height: 1.3em;
+  background-image: url("ext.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.target:hover{ background-color: rgb(80,80,90) }
+.target > a:hover{ filter: drop-shadow(0 0 3px fuchsia) }
+/*#targets{ display: grid; grid-template-columns: 1fr 1fr 1fr }*/
+#targets{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: calc(var(--grid-rows) * 2.4rem);
+}
+
+pre{
+  white-space: pre-wrap;
+  margin: 1em;
+  border: 2px inset;
+  padding: 0.5em;
+  background-color: rgb(40,50,50)
+}
+
+.categoryList:not(.blurred)+.categoryList,
+.hidden{ display: none !important }
+
+.target{ display: flex; justify-content: space-between }
+
+.comment{ color: rgb(50,180,20) }
+.selector{ color: violet }
+.pseudo{ color: silver }
+.id{ color: lightcoral }
+.class{ color: lightgreen }
+.attribute{ color: cyan }  
+.atrule{ color: royalblue }
+.atvalue{ color: lightblue }
+.property{ color: orange }
+.value{ color: skyblue }
+.curly{ color: orangered } 
