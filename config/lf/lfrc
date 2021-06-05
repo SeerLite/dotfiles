@@ -41,8 +41,7 @@ cmd d delete
 cmd open ${{
     case "$(file -b --mime-type -- $f)" in
         text/*) $EDITOR -- $fx;;
-        application/vnd.openxmlformats-officedocument.wordprocessingml.document) zaread $fx;;
-        *) mimeo -qc -- $fx | /usr/bin/dash;;
+        *) setsid -f xdg-open $fx >/dev/null 2>/dev/null;;
     esac
 }}
 
